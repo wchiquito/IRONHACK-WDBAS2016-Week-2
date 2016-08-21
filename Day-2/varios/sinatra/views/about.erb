@@ -1,0 +1,8 @@
+<h5 class='red'>Check my <a href="https://github.com/wchiquito">GitHub</a></h5>
+<% if @show %>
+	<ul>
+		<% @repos.each do |repo| %>
+			<li><%= repo %></li>
+		<% end %>
+	</ul>
+<% end %>

@@ -1,0 +1,11 @@
+<h6><a href='/'>New search...</a></h6>
+<h1>Movies for: <%= @title_movie %></h1>
+<center>
+<% if @movies_length < @min_movies %>
+    <h1>Just <%= @movies_length %> movies...</h1>
+<% else %>
+    <% @movies.each do |movie| %>
+        <img src='<%= movie.poster %>'>
+    <% end %>
+<% end %>
+</center>

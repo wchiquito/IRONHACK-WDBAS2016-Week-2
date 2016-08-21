@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<title>Ironhack - Sinatra</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <img width='10%' heigth='10%' src='/GitHub.png'>
+    <strong>William's Apps</strong>
+	<%= yield %>
+    <h6 class='blue'>Current time: <%= @time %></h6>
+    <h6 class='red'>Environment: <%= settings.environment %></h6>
+    <%= session[:save_value] %>
+</body>
+</html>
